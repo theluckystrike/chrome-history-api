@@ -1,0 +1,38 @@
+{
+    "name": "chrome-history-api",
+    "version": "0.1.0",
+    "description": "Chrome History API wrapper — search, stats, cleanup, domain analytics, and browsing pattern insights for MV3 extensions. Zero dependencies.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "history",
+        "chrome-history",
+        "browsing-history",
+        "manifest-v3",
+        "browser-extension",
+        "history-search",
+        "history-stats",
+        "cleanup"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-history-api.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
